@@ -1,2 +1,3 @@
 class Doctor < ApplicationRecord
-end
+  has_many :appointments
+    has_many :patients, through: :appointmentsend
